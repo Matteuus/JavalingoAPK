@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "55144621892",
+    "firebase_url": "https://javalingo-cb080.firebaseio.com",
+    "project_id": "javalingo-cb080",
+    "storage_bucket": "javalingo-cb080.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:55144621892:android:06f5cf7d0ea68e74",
+        "android_client_info": {
+          "package_name": "com.example.rfael.javalingo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "55144621892-vra2vsen9fq3q9t8jhbp7hepl5bs992f.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.rfael.javalingo",
+            "certificate_hash": "2049547801e339fd7f0998bd0a32292e8019ef61"
+          }
+        },
+        {
+          "client_id": "55144621892-k5m7sj5u591ibe2es0quionhvte25l43.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB40lAOY7zS3CYadMTy8qea7KuAuPyAn-M"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "55144621892-k5m7sj5u591ibe2es0quionhvte25l43.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
