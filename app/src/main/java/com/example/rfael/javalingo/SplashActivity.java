@@ -5,8 +5,9 @@ import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 
-public class SplashActivity extends ActionBarActivity implements Runnable {
+public class SplashActivity extends AppCompatActivity implements Runnable {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,7 +22,7 @@ public class SplashActivity extends ActionBarActivity implements Runnable {
     }
 
     public void run() {
-        startActivity(new Intent(this, MainActivity.class));
+        startActivity(new Intent(SplashActivity.this, MainActivity.class));
         finish();
     }
 

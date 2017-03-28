@@ -15,9 +15,9 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="128dp"
         android:background="@android:color/background_light"
-        android:onClick="começar"
         android:text="COMEÇAR AGORA"
         android:textColor="@color/colorPrimary"
+
         android:textSize="18sp" />
 
     <TextView

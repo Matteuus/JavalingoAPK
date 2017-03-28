@@ -4,33 +4,32 @@ import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 
-public class MainActivity extends ActionBarActivity {
+public class MainActivity extends AppCompatActivity {
 
-    ImageView imageView;
+    private Button button2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.telaprincipal);
 
-        imageView = (ImageView) findViewById(R.id.imageView);
+        button2 = (Button) findViewById(R.id.button2);
+
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                MediaPlayer mpBtSom = MediaPlayer.create(MainActivity.this, R.raw.click);
+                mpBtSom.start();
+                startActivity(new Intent(MainActivity.this, EntradaActivity.class));
+            }
+        });
 
 
-
-    }
-
-    public void telaPrincipal(View v) {
-        setContentView(R.layout.telaprincipal);
-    }
-
-    public void começar(View v) {
-        MediaPlayer mpBtSom = MediaPlayer.create(this, R.raw.click);
-        mpBtSom.start();
-        Intent intent = (new Intent(MainActivity.this,CadastroActivity.class));
-        startActivity(intent);
     }
 
 }

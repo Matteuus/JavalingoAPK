@@ -24,7 +24,7 @@ import com.google.firebase.database.FirebaseDatabase;
 
 public class CadastroActivity extends AppCompatActivity {
 
-    EditText ctEmail, ctNome, ctSenha;
+    EditText ctEmail, ctSenha;
     Button btCriar;
     FirebaseDatabase firebaseDatabase;
     DatabaseReference databaseReference;
@@ -35,14 +35,13 @@ public class CadastroActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.cadastro);
 
-        firebaseAuth = FirebaseAuth.getInstance();
+
 
         ctEmail = (EditText) findViewById(R.id.ctEmail);
-        ctNome = (EditText) findViewById(R.id.ctNome);
         ctSenha = (EditText) findViewById(R.id.ctSenha);
         btCriar = (Button) findViewById(R.id.btCriar);
-        firebaseDatabase = FirebaseDatabase.getInstance();
-        databaseReference = firebaseDatabase.getReferenceFromUrl("https://javalingo-cb080.firebaseio.com/");
+
+        firebaseAuth = FirebaseAuth.getInstance();
 
         btCriar.setOnClickListener(new View.OnClickListener() {
             @Override
