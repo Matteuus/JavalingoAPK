@@ -29,7 +29,8 @@ public class MainActivity extends ActionBarActivity {
     public void começar(View v) {
         MediaPlayer mpBtSom = MediaPlayer.create(this, R.raw.click);
         mpBtSom.start();
-        setContentView(R.layout.entrada);
+        Intent intent = (new Intent(MainActivity.this,CadastroActivity.class));
+        startActivity(intent);
     }
 
 }
