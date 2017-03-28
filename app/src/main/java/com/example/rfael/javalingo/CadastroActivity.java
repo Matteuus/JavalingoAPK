@@ -67,4 +67,8 @@ public class CadastroActivity extends AppCompatActivity {
 
     }
 
+    public void voltartelalogin(View v){
+        startActivity(new Intent(CadastroActivity.this, EntradaActivity.class));
+    }
+
 }
