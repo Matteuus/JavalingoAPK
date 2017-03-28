@@ -20,16 +20,13 @@ public class MainActivity extends AppCompatActivity {
 
         button2 = (Button) findViewById(R.id.button2);
 
-        button2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                MediaPlayer mpBtSom = MediaPlayer.create(MainActivity.this, R.raw.click);
-                mpBtSom.start();
-                startActivity(new Intent(MainActivity.this, EntradaActivity.class));
-            }
-        });
 
+    }
 
+    public void agoravai(View v){
+        MediaPlayer mpBtSom = MediaPlayer.create(MainActivity.this, R.raw.click);
+        mpBtSom.start();
+        startActivity(new Intent(MainActivity.this, EntradaActivity.class));
     }
 
 }

@@ -59,4 +59,11 @@ public class EntradaActivity extends AppCompatActivity {
 
 
     }
+
+    public void voltartelaPrincipal(View v){
+        startActivity(new Intent(EntradaActivity.this, MainActivity.class));
+    }
+    public void cadastrarusuario (View v){
+        startActivity(new Intent(EntradaActivity.this, CadastroActivity.class));
+    }
 }

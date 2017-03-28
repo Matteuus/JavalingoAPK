@@ -16,6 +16,7 @@
         android:layout_marginBottom="128dp"
         android:background="@android:color/background_light"
         android:text="COMEÇAR AGORA"
+        android:onClick="agoravai"
         android:textColor="@color/colorPrimary"
 
         android:textSize="18sp" />

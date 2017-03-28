@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
     android:background="@drawable/fundo"
-    tools:context=".MainActivity">
+    tools:context=".EntradaActivity">
 
     <Button
         android:id="@+id/btVoltar"
@@ -89,7 +89,7 @@
         android:layout_below="@+id/btLogar"
         android:layout_centerHorizontal="true" />
 
-    <android.support.v4.widget.CircleImageView
+    <android.support.design.widget.FloatingActionButton
         android:id="@+id/btcadastrar"
         android:layout_width="80dp"
         android:layout_height="80dp"
@@ -99,6 +99,7 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
         android:layout_marginRight="11dp"
+        android:onClick="cadastrarusuario"
         android:layout_marginEnd="11dp" />
 
 
